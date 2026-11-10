@@ -19,7 +19,7 @@ Passed `npm run check` (JavaScript syntax for client and build/server scripts) a
 
 Local production-shaped static build, mobile 390px, 4× CPU slowdown, 150ms simulated latency and 200,000 bytes/s download; cache disabled. CDP NavigationStart to DomContentLoaded: approximately 0.76 seconds in this run. This is a local development sanity check, not field Core Web Vitals, an LCP/INP claim, or a production Lighthouse score. Overrides were reset.
 
-Images total about 420 KiB and shipped font files about 672 KiB; the browser requests only the weights it needs. No runtime framework, remote font stylesheet, external image host or third-party analytics is needed at page load. Below-fold example photos use lazy loading. Build output contains crawler blocking for review.
+Images total about 420 KiB. The original font set was replaced with self-hosted Jost during the brand review; the browser requests only the weights it needs. No runtime framework, remote font stylesheet, external image host or third-party analytics is needed at page load. Below-fold example photos use lazy loading. Build output contains crawler blocking for review.
 
 ## Remaining release work
 
@@ -29,3 +29,5 @@ Images total about 420 KiB and shipped font files about 672 KiB; the browser req
 - Connect approved website analytics, consent and attribution if publishing.
 - Add production canonical, OG preview image, sitemap and indexing policy when a real deployment is authorized.
 - Real iPhone/Android Safari/Chrome playback/interaction review and production performance remain unverified.
+
+Brand and copy revision: see `brand-and-copy-review.md` for the latest changes and checks.

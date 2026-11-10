@@ -1,20 +1,20 @@
 import { features } from './config.js';
 
 const occasions = {
-  birthday: { title: 'The birthday edit', description: 'A few favorites for another trip around the sun.', products: [
-    { id:'headphones', name:'A little time to tune out', category:'For my everyday', image:'headphones' },
-    { id:'camera', name:'More moments to keep', category:'For the memories', image:'camera' },
-    { id:'flowers', name:'Flowers. Always flowers.', category:'For a little joy', image:'flowers' },
+  birthday: { title: 'My birthday wishlist', description: 'A camera, headphones and flowers. Here’s what’s on my list this year.', products: [
+    { id:'headphones', name:'Headphones for my commute', category:'Everyday listening', image:'headphones' },
+    { id:'camera', name:'A camera for our next trip', category:'Travel', image:'camera' },
+    { id:'flowers', name:'Flowers for the kitchen', category:'At home', image:'flowers' },
   ] },
-  home: { title: 'A place of my own', description: 'Little things to make a new space feel like home.', products: [
+  home: { title: 'A place of my own', description: 'A chair for my reading corner and a few things for the new place.', products: [
     { id:'chair', name:'My new reading corner', category:'For slow Sundays', image:'chair' },
-    { id:'flowers', name:'A brighter windowsill', category:'For a little color', image:'flowers' },
-    { id:'headphones', name:'The housewarming playlist', category:'For settling in', image:'headphones' },
+    { id:'flowers', name:'Flowers for the windowsill', category:'On the windowsill', image:'flowers' },
+    { id:'headphones', name:'Headphones for unpacking', category:'For settling in', image:'headphones' },
   ] },
-  just: { title: 'The just-because list', description: 'No big occasion needed. Just a few things I love.', products: [
-    { id:'sneakers', name:'A fresh pair of favorites', category:'For going places', image:'sneakers' },
-    { id:'bag', name:'Ready for a little adventure', category:'For the weekend', image:'bag' },
-    { id:'camera', name:'A different point of view', category:'For getting creative', image:'camera' },
+  just: { title: 'The just-because list', description: 'A few things I’d like, whenever the occasion comes along.', products: [
+    { id:'sneakers', name:'A new pair of sneakers', category:'For going places', image:'sneakers' },
+    { id:'bag', name:'A bag for weekends away', category:'For the weekend', image:'bag' },
+    { id:'camera', name:'A camera to take with me', category:'For getting creative', image:'camera' },
   ] },
 };
 const saved = new Set();

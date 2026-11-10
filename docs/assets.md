@@ -15,4 +15,4 @@ Illustrative photographs downloaded from Unsplash CDN on 10 November 2026, resiz
 
 Source URL pattern: `https://images.unsplash.com/{photo-id}?auto=format&fit=crop&w=720&q=82`. Before a production launch the owner can replace these with approved product imagery or confirm the stock photo selection.
 
-Fonts: DM Sans and Manrope, downloaded through Google Fonts and self-hosted. OFL license texts are included beside the font files. Georgia is a system fallback, not distributed.
+Fonts: Jost (the landing typeface specified on page 9 of the supplied BrandBook.pdf), downloaded through Google Fonts and self-hosted. OFL license texts are included beside the font files. Georgia is a system fallback, not distributed.

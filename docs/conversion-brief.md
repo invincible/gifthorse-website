@@ -27,9 +27,9 @@ No customer counts, ratings, reviews, outcomes, partner endorsements or testimon
 
 ## Visual system
 
-Expressive level. Warm off-white, charcoal type, coral emphasis and muted olive details. Manrope for display, DM Sans for copy, Georgia italics for a handwritten editorial feel. Existing horse mark is retained in monochrome; the new typographic wordmark uses the established GiftHorse name. No registered-trademark claim is made.
+Expressive level. Brandbook-aligned violet accents (#8240E4, hover #5A0BD1), dark text (#171A20), a near-white background and pale violet surfaces. Jost is the primary landing font per brandbook page 9. Georgia italics retain the approved editorial accents. Background gradients are omitted at the owner’s request. Existing horse mark is retained in monochrome; the new typographic wordmark uses the established GiftHorse name. No registered-trademark claim is made.
 
-Signature motif: a small collection of tilted gift cards, handwritten notes and an asterisk. The hero cards move gently; sections have restrained entrances; occasion selection and favorite toggles demonstrate collecting tastes. The same paper/card language continues below the hero. No paid generation is used.
+Signature motif: a small collection of tilted gift cards, handwritten notes and an asterisk. The decorative arrow above the cards was removed after review; the caption is positioned independently. The hero cards move gently; sections have restrained entrances; occasion selection and favorite toggles demonstrate collecting tastes. The same paper/card language continues below the hero. No paid generation is used.
 
 All photos are local illustrative product photographs, not actual app screenshots or catalog items. Store names, product pricing and buying controls are intentionally absent from examples. Mobile stacks the story; at reduced motion, animation and transitions stop and reveal content remains visible. Essential content and download destinations remain available without JavaScript.
 
