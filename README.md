@@ -2,6 +2,13 @@
 
 Local review version of the GiftHorse marketing website, prepared on 10 November 2026. This is a new static site, separate from the existing production website. English copy targets the US and UAE brief.
 
+## Share with the team
+
+- Public repository: https://github.com/invincible/gifthorse-website
+- Live review: https://invincible.github.io/gifthorse-website/
+
+GitHub Actions builds and publishes `dist/` after pushes to `main`. The review site retains `noindex`; the production GiftHorse domain is unchanged.
+
 ## Run locally
 
 Requires Node.js 22+. No package installation or build dependencies are needed.

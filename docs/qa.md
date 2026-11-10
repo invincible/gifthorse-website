@@ -31,3 +31,9 @@ Images total about 420 KiB. The original font set was replaced with self-hosted 
 - Real iPhone/Android Safari/Chrome playback/interaction review and production performance remain unverified.
 
 Brand and copy revision: see `brand-and-copy-review.md` for the latest changes and checks.
+
+## Readability and shared review revision
+
+All explicit text sizes increased: ordinary body copy is generally 15–19px, small interface labels 12–15px, and decorative card labels at least 10px. Display headings increased about 8–10%. Full stops were removed from headings, including the hero's decorative period. Jost remains the primary typeface; Georgia is retained for editorial italic accents.
+
+Assets now use relative URLs so the same static build works on localhost and beneath `/gifthorse-website/`. GitHub Pages deploys only `dist/` through an Actions workflow; project documents and source notes are not copied into the website artifact. Repository visibility was changed to public at the owner's explicit request.

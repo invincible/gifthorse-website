@@ -39,4 +39,4 @@ Static HTML/CSS and native JavaScript modules, with zero runtime/build dependenc
 
 Client hooks: landing_view, download_section_opened, store_clicked, occasion_selected, demo_favorite_changed, faq_opened. Only allowlisted demo values are dispatched locally. Production adapter, consent decisions, attribution/deep links and installation reconciliation remain work for a confirmed release.
 
-The current appmetrica redirect was not reused because its campaign attribution/ownership was not verified; store CTAs use the existing direct app IDs. Private GitHub copy, review-only indexing policy, no production deployment. All original project documents stay outside the site repository.
+The current appmetrica redirect was not reused because its campaign attribution/ownership was not verified; store CTAs use the existing direct app IDs. Public GitHub repository and GitHub Pages review URL, authorized by the owner after the initial private review. Review-only indexing policy; the production domain is unchanged. All original project documents stay outside the site repository.

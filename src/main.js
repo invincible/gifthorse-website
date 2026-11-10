@@ -39,7 +39,7 @@ function renderOccasion(key) {
     const article = document.createElement('article');
     article.className = 'product-tile';
     const selected = saved.has(product.id);
-    article.innerHTML = `<div class="product-photo"><img src="/images/${product.image}.jpg" width="720" height="828" loading="lazy" alt="${product.name}"/><button class="favorite" type="button" data-product="${product.id}" aria-label="${selected ? 'Remove' : 'Save'} ${product.name}" aria-pressed="${selected}">${selected ? '♥' : '♡'}</button></div><small>${product.category}</small><h4>${product.name}</h4>`;
+    article.innerHTML = `<div class="product-photo"><img src="${new URL(`../images/${product.image}.jpg`, import.meta.url).href}" width="720" height="828" loading="lazy" alt="${product.name}"/><button class="favorite" type="button" data-product="${product.id}" aria-label="${selected ? 'Remove' : 'Save'} ${product.name}" aria-pressed="${selected}">${selected ? '♥' : '♡'}</button></div><small>${product.category}</small><h4>${product.name}</h4>`;
     return article;
   }));
   updateCounter();
