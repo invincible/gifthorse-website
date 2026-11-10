@@ -46,6 +46,6 @@ AI Gift Finder, the Amazon catalog, group collections, crypto, donations, price 
 
 ## Before publishing
 
-This review build intentionally sets `noindex,nofollow` and disallows crawling. Production publication requires an intentional update to the build's review guard and robots policy, a real canonical URL, absolute OG image metadata, sitemap, and verification of legal documents and release-dependent claims. No production domain or hosting was changed.
+This review build intentionally sets `noindex,nofollow` and disallows crawling. Production publication requires an intentional update to the build's review guard and robots policy, a real canonical URL, absolute OG image metadata, sitemap, and verification of legal documents and release-dependent claims. The existing production domain and its hosting were not changed.
 
 Analytics dispatches `gifthorse:analytics` custom events without transmitting data. No Firebase credentials, property IDs, or analytics SDK were copied from the app. Connect an approved web analytics adapter before claiming measured conversions. App installs must be measured downstream, not inferred from store clicks.
