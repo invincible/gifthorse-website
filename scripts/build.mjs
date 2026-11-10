@@ -1,0 +1,10 @@
+import { mkdir, cp, readFile, writeFile, rm } from 'node:fs/promises';
+await rm('dist', { recursive:true, force:true });
+await mkdir('dist', { recursive:true });
+await cp('public','dist', { recursive:true });
+await cp('src','dist/src', { recursive:true });
+await cp('index.html','dist/index.html');
+const html = await readFile('dist/index.html','utf8');
+if (!html.includes('noindex,nofollow')) throw new Error('Review build must remain noindex');
+await writeFile('dist/robots.txt','User-agent: *\nDisallow: /\n');
+console.log('Built static review site in dist/');
