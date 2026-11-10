@@ -39,3 +39,9 @@ All explicit text sizes increased: ordinary body copy is generally 15–19px, sm
 Assets now use relative URLs so the same static build works on localhost and beneath `/gifthorse-website/`. GitHub Pages deploys only `dist/` through an Actions workflow; project documents and source notes are not copied into the website artifact. Repository visibility was changed to public at the owner's explicit request.
 
 GitHub Pages deployment confirmed at https://invincible.github.io/gifthorse-website/ (HTTP 200). Initial Actions run 42829610450 completed successfully. Live browser verified Jost, correct project-subpath image URLs, no heading full stops, no horizontal overflow at the normal desktop width, functioning occasion selection/favorite counter, and no captured console errors. The 320px local build also reported scrollWidth equal to viewport width; mobile CTAs wrap rather than shrinking the text. Public repository visibility was verified through the GitHub API.
+
+## Extended responsive audit
+
+Checked 320, 360, 390, 768, 800, 801, 820, 1000, 1001, 1024, 1100, 1101, 1280 and 1440px browser viewports, including both sides of layout breakpoints. Every width reported scrollWidth equal to viewport width and no headings, body text, links, buttons or FAQ summaries outside the viewport. Inspected tablet hero, steps, example wishlist and expanded FAQ visually.
+
+Fixed a crowded tablet hero by moving the gift cards below the text at 801–1000px; moved the decorative mark away from the caption at intermediate laptop widths. Constrained illustrated browser/list content and message bubbles to their containers. Rechecked message bounds: no clipping at any audited width. Keyboard/browser interaction and browser viewport checks do not replace real-device Safari/Android testing.

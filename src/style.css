@@ -1556,3 +1556,26 @@ body {
   .header .brand img { width:30px; height:30px; }
   .header { gap:12px; }
 }
+/* Give the hero cards their own row before the two-column layout gets crowded. */
+@media (max-width:1100px) {
+  .scene-spark { left:auto; right:8px; top:14px; }
+}
+@media (min-width:801px) and (max-width:1000px) {
+  .hero { grid-template-columns:1fr; padding-top:48px; gap:24px; }
+  .hero-copy { max-width:620px; }
+  .hero-scene {
+    width:min(100%,520px);
+    margin:0 auto;
+    transform:none;
+    height:550px;
+  }
+}
+.mini-browser { max-width:calc(100% - 32px); }
+.mini-list img { min-width:0; flex:1; max-width:60px; height:auto; aspect-ratio:1; }
+.bubble {
+  max-width:calc(100% - 40px);
+  transform:translateX(-8px) rotate(-4deg);
+}
+.bubble-reply { transform:translateX(8px) rotate(3deg); }
+.bubble { display:flex; align-items:center; gap:10px; }
+.bubble span { margin-left:0; flex-shrink:0; }
