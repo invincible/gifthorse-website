@@ -1,10 +1,25 @@
-import { mkdir, cp, readFile, writeFile, rm } from 'node:fs/promises';
+import { mkdir, cp, readFile, writeFile, rm, rename } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+const hash = content => createHash('sha256').update(content).digest('hex').slice(0, 12);
 await rm('dist', { recursive:true, force:true });
 await mkdir('dist', { recursive:true });
 await cp('public','dist', { recursive:true });
 await cp('src','dist/src', { recursive:true });
-await cp('index.html','dist/index.html');
-const html = await readFile('dist/index.html','utf8');
+let html = await readFile('index.html','utf8');
 if (!html.includes('noindex,nofollow')) throw new Error('Review build must remain noindex');
+// Content-addressed URLs prevent a browser from reusing an earlier Pages build.
+const config = await readFile('dist/src/config.js','utf8');
+const configFile = `config.${hash(config)}.js`;
+await rename('dist/src/config.js', `dist/src/${configFile}`);
+let main = await readFile('dist/src/main.js','utf8');
+main = main.replace("'./config.js'", `'./${configFile}'`);
+const mainFile = `main.${hash(main)}.js`;
+await writeFile(`dist/src/${mainFile}`, main);
+await rm('dist/src/main.js');
+const css = await readFile('dist/src/style.css','utf8');
+const cssFile = `style.${hash(css)}.css`;
+await rename('dist/src/style.css', `dist/src/${cssFile}`);
+html = html.replace('./src/style.css', `./src/${cssFile}`).replace('./src/main.js', `./src/${mainFile}`);
+await writeFile('dist/index.html',html);
 await writeFile('dist/robots.txt','User-agent: *\nDisallow: /\n');
 console.log('Built static review site in dist/');
