@@ -1579,3 +1579,47 @@ body {
 .bubble-reply { transform:translateX(8px) rotate(3deg); }
 .bubble { display:flex; align-items:center; gap:10px; }
 .bubble span { margin-left:0; flex-shrink:0; }
+
+.footer-support {
+  color:var(--accent);
+  font-weight:600;
+  overflow-wrap:anywhere;
+  text-decoration:underline;
+  text-underline-offset:.18em;
+}
+.footer-bottom nav {
+  flex-wrap:wrap;
+  font-size:14px;
+}
+.support-page {
+  max-width:760px;
+  padding-block:48px 72px;
+  overflow-wrap:anywhere;
+}
+.support-page h1 {
+  margin-block:24px;
+  font-size:clamp(36px, 6vw, 60px);
+}
+.support-page h2 {
+  margin-block:30px 8px;
+  font-size:clamp(24px, 4vw, 32px);
+  letter-spacing:-.035em;
+}
+.support-page h3 {
+  margin-block:20px 6px;
+  font-size:19px;
+}
+.support-page p,
+.support-page li {
+  font-size:17px;
+  line-height:1.65;
+}
+.support-page p + p,
+.support-page li + li {
+  margin-top:8px;
+}
+.support-page p a {
+  color:var(--accent);
+  text-decoration:underline;
+  text-underline-offset:.18em;
+}

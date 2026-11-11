@@ -5,8 +5,6 @@ await rm('dist', { recursive:true, force:true });
 await mkdir('dist', { recursive:true });
 await cp('public','dist', { recursive:true });
 await cp('src','dist/src', { recursive:true });
-let html = await readFile('index.html','utf8');
-if (!html.includes('noindex,nofollow')) throw new Error('Review build must remain noindex');
 // Content-addressed URLs prevent a browser from reusing an earlier Pages build.
 const config = await readFile('dist/src/config.js','utf8');
 const configFile = `config.${hash(config)}.js`;
@@ -19,7 +17,13 @@ await rm('dist/src/main.js');
 const css = await readFile('dist/src/style.css','utf8');
 const cssFile = `style.${hash(css)}.css`;
 await rename('dist/src/style.css', `dist/src/${cssFile}`);
-html = html.replace('./src/style.css', `./src/${cssFile}`).replace('./src/main.js', `./src/${mainFile}`);
-await writeFile('dist/index.html',html);
+for (const page of ['index.html', 'privacy.html', 'delete-account.html']) {
+  const html = await readFile(page, 'utf8');
+  if (!html.includes('noindex,nofollow')) throw new Error(`Review page must remain noindex: ${page}`);
+  const builtHtml = html
+    .replace('./src/style.css', `./src/${cssFile}`)
+    .replace('./src/main.js', `./src/${mainFile}`);
+  await writeFile(`dist/${page}`, builtHtml);
+}
 await writeFile('dist/robots.txt','User-agent: *\nDisallow: /\n');
 console.log('Built static review site in dist/');
