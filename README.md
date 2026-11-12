@@ -31,12 +31,12 @@ Open http://127.0.0.1:4174. The `dist/` directory can be served by any static ho
 
 - `index.html`: public copy, sections, store and legal links.
 - `src/style.css`: responsive layout, typography, movement, reduced-motion treatment.
-- `src/main.js`: example lists, in-memory favorites, event hooks.
+- `src/main.js`: example lists and event hooks.
 - `src/config.js`: release-dependent copy flag.
 - `public/`: local images and fonts.
 - `docs/`: positioning decisions, source notes, release requirements and QA evidence.
 
-The page's list examples are illustrative and explicitly labeled. Favorites are held in memory only; this is a marketing demonstration, not the GiftHorse app. Store buttons link to the real existing listings. There are no payments, forms, AI calls, signups or app API integrations in this site.
+The page's list examples are illustrative and explicitly labeled. Store buttons link to the real existing listings. There are no payments, forms, AI calls, signups or app API integrations in this site.
 
 ## Release-dependent copy
 

@@ -29,7 +29,7 @@ No customer counts, ratings, reviews, outcomes, partner endorsements or testimon
 
 Expressive level. Brandbook-aligned violet accents (#8240E4, hover #5A0BD1), dark text (#171A20), a near-white background and pale violet surfaces. Jost is the primary landing font per brandbook page 9. Georgia italics retain the approved editorial accents. Background gradients are omitted at the owner’s request. Existing horse mark is retained in monochrome; the new typographic wordmark uses the established GiftHorse name. No registered-trademark claim is made.
 
-Signature motif: a small collection of tilted gift cards, handwritten notes and an asterisk. The decorative arrow above the cards was removed after review; the caption is positioned independently. The hero cards move gently; sections have restrained entrances; occasion selection and favorite toggles demonstrate collecting tastes. The same paper/card language continues below the hero. No paid generation is used.
+Signature motif: a small collection of tilted gift cards, handwritten notes and an asterisk. The decorative arrow above the cards was removed after review; the caption is positioned independently. The hero cards move gently; sections have restrained entrances; occasion selection lets visitors browse example lists. The same paper/card language continues below the hero. No paid generation is used.
 
 All photos are local illustrative product photographs, not actual app screenshots or catalog items. Store names, product pricing and buying controls are intentionally absent from examples. Mobile stacks the story; at reduced motion, animation and transitions stop and reveal content remains visible. Essential content and download destinations remain available without JavaScript.
 
@@ -37,6 +37,6 @@ All photos are local illustrative product photographs, not actual app screenshot
 
 Static HTML/CSS and native JavaScript modules, with zero runtime/build dependencies. Local fonts and images prevent third-party resource calls on page load. No form or data collection is present. The existing app Firebase setup was not assumed to apply to this website.
 
-Client hooks: landing_view, download_section_opened, store_clicked, occasion_selected, demo_favorite_changed, faq_opened. Only allowlisted demo values are dispatched locally. Production adapter, consent decisions, attribution/deep links and installation reconciliation remain work for a confirmed release.
+Client hooks: landing_view, download_section_opened, store_clicked, occasion_selected, faq_opened. Only allowlisted demo values are dispatched locally. Production adapter, consent decisions, attribution/deep links and installation reconciliation remain work for a confirmed release.
 
 The current appmetrica redirect was not reused because its campaign attribution/ownership was not verified; store CTAs use the existing direct app IDs. Public GitHub repository and GitHub Pages review URL, authorized by the owner after the initial private review. Review-only indexing policy; the production domain is unchanged. All original project documents stay outside the site repository.
