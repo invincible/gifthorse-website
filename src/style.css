@@ -810,10 +810,17 @@ details>p {
   transform:rotate(12deg);
 }
 .store-buttons {
-  display:flex;
-  justify-content:center;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
   gap:12px;
-  margin-top:29px;
+  max-width:690px;
+  margin:29px auto 0;
+}
+@media (max-width:640px) {
+  .store-buttons {
+    grid-template-columns:1fr;
+    max-width:360px;
+  }
 }
 .store-button {
   display:flex;
@@ -824,7 +831,8 @@ details>p {
   border-radius:7px;
   padding:11px 17px;
   text-align:left;
-  min-width:180px;
+  min-width:0;
+  min-height:60px;
   transition:transform .2s;
 }
 .store-button:hover {
@@ -842,8 +850,12 @@ details>p {
   letter-spacing:-.4px;
   font-weight:600;
 }
+.store-button>svg,
 .store-button>span:last-child {
-  margin-left:5px;
+  flex-shrink:0;
+}
+.store-button>span:last-child {
+  margin-left:auto;
 }
 .store-symbol {
   font-size:31px;
@@ -1205,7 +1217,6 @@ details>p {
     opacity:.6;
   }
   .store-button {
-    min-width:155px;
     padding:11px 12px;
     gap:9px;
   }
@@ -1214,7 +1225,6 @@ details>p {
   }
   .store-button>span:last-child {
     font-size:17px;
-    margin-left:0;
   }
   .store-symbol {
     font-size:25px;
@@ -1314,8 +1324,7 @@ details>p {
     gap:8px;
   }
   .store-button {
-    min-width:0;
-    padding:11px 10px;
+    padding:11px 12px;
   }
   .store-button strong {
     font-size:17px;
@@ -1451,8 +1460,6 @@ body {
   .link-note small { font-size:12px; }
   .scene-caption { right:55px; font-size:23px; }
   .section-top { flex-wrap:wrap; gap:10px; }
-  .store-buttons { flex-wrap:wrap; }
-  .store-button { min-width:165px; }
 }
 @media (max-width:390px) {
   .header .brand { font-size:22px; gap:7px; }

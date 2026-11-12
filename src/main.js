@@ -47,6 +47,7 @@ document.querySelectorAll('[data-occasion]').forEach(button => {
 });
 document.querySelectorAll('a[href="#get-app"]').forEach(link => link.addEventListener('click', () => track('download_section_opened')));
 document.querySelectorAll('[data-store]').forEach(link => link.addEventListener('click', () => track('store_clicked', { platform: link.dataset.store })));
+document.querySelector('#open-web-app').addEventListener('click', () => track('web_app_opened'));
 document.querySelectorAll('details').forEach(details => details.addEventListener('toggle', () => {
   if (details.open) track('faq_opened', { question: details.querySelector('summary').textContent.replace('+','').trim() });
 }));
